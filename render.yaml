@@ -4,3 +4,4 @@ services:
     name: libretranslate
     env: docker
     dockerContext: .
+    startCommand: ./venv/bin/gunicorn --bind 0.0.0.0:$PORT wsgi:app
