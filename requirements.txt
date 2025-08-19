@@ -1,2 +1,2 @@
 gunicorn
-libretranslate
+libretranslate==1.7.2
