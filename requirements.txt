@@ -1,3 +1,0 @@
-gunicorn
-libretranslate==1.7.2
-torch==2.2.0 --index-url https://download.pytorch.org/whl/cpu
