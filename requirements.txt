@@ -1,2 +1,2 @@
 gunicorn==23.0.0
-libretranslate==1.7.2
+libretranslate==1.6.5
