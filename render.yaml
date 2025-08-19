@@ -1,7 +1,6 @@
-# render.yaml
 services:
   - type: web
     name: libretranslate
     env: docker
     dockerContext: .
-    ./venv/bin/gunicorn --bind 0.0.0.0:$PORT "main:main('--wsgi')"
+    startCommand: ./venv/bin/gunicorn --bind 0.0.0.0:$PORT wsgi:app
