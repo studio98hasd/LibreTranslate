@@ -2,6 +2,6 @@
 services:
   - type: web
     name: libretranslate
-    env: python
-    buildCommand: pip install -r requirements.txt
+    env: docker
+    dockerContext: .
     startCommand: gunicorn --bind 0.0.0.0:$PORT wsgi:app
